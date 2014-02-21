@@ -23,9 +23,9 @@
 
 `note <note_name>` - opens specified note in vim (with autocomplete, and "fuzzy" matching)
 
-`note <new_name>` - creates a new note and opens vim
+`note new <new_name>` - creates a new note and opens vim
 
-`note peak <note_name>` - shows the first few lines of a given note
+`note peek <note_name>` - shows the first few lines of a given note
 
 ### Set-up
 
