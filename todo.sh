@@ -5,7 +5,7 @@ export TODO=~/Dropbox/Todo
 function note() {
     if (( $# == 0 )) then ls $NOTES;
     elif [[ $1 == "new" ]]; then vi $NOTES/"$2.txt";
-    elif [[ $1 == "peek" ]]; then head $NOTES/$2;
+    elif [[ $1 == "peek" ]]; then find $NOTES -iname "${@:2}*" -exec head {} \;;
       else find $NOTES -iname "$@*" -exec vi {} \;; fi
 }
 
