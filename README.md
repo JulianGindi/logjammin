@@ -25,6 +25,8 @@
 
 `note new <new_name>` - creates a new note and opens vim
 
+`note find <text>` - returns list of notes whose file-names match provided text
+
 `note peek <note_name>` - shows the first few lines of a given note
 
 ### Set-up
