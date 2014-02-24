@@ -6,6 +6,7 @@ function note() {
     if (( $# == 0 )) then ls $NOTES;
     elif [[ $1 == "new" ]]; then vi $NOTES/"$2.txt";
     elif [[ $1 == "peek" ]]; then find $NOTES -iname "${@:2}*" -exec head {} \;;
+    elif [[ $1 == "find" ]]; then ls $NOTES | grep -i ${@:2};
       else find $NOTES -iname "$@*" -exec vi {} \;; fi
 }
 
