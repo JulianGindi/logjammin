@@ -28,6 +28,7 @@
 `note find <text>` - returns list of notes whose file-names match provided text
 
 `note peek <note_name>` - shows the first few lines of a given note
+`note rm <note_name>` - deletes the specified note. (NOTE: BE CAREFUL WITH THIS. IT REMOVES THE FIRST NOTE RETURNED AFTER RUNNING A GREP COMMAND WITH THE PASSED-IN NOTE NAME)
 
 ### Set-up
 
