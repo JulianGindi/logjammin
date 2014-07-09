@@ -8,6 +8,7 @@ function note() {
     elif [[ $1 == "peek" ]]; then find $NOTES -iname "${@:2}*" -exec head {} \;;
     elif [[ $1 == "find" ]]; then ls $NOTES | grep -i ${@:2};
     elif [[ $1 == "rm" ]]; then cd $NOTES && ls | grep -i ${@:2} | head -n1 | xargs rm && cd -
+    elif [[ $1 == "old" ]]; then ls -tr $NOTES | head -n 20
       else find $NOTES -iname "$@*" -exec vi {} \;; fi
 }
 
